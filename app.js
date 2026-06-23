@@ -9,17 +9,14 @@ const MAX_WALK_MINUTES = 15;
 
 const DEAL_TEMPLATES = [
   { venue: "Corner Slice", category: "lunch", tag: "Lunch special", deal: "Slice + soda, $6 until 3pm", offsetKm: 0.4, bearing: 30 },
-  { venue: "The Tin Cup", category: "happy-hour", tag: "Happy hour", deal: "$5 drafts, 4-6pm daily", offsetKm: 0.9, bearing: 110 },
-  { venue: "Riverside Green", category: "free-event", tag: "Free event", deal: "Outdoor yoga, 6pm, free", offsetKm: 1.1, bearing: 200 },
-  { venue: "Banh Mi House", category: "food-deal", tag: "Food deal", deal: "Buy one banh mi, get one half off", offsetKm: 0.6, bearing: 260 },
-  { venue: "The Lower Deck", category: "live-music", tag: "Live music", deal: "Acoustic duo, 7-9pm, no cover", offsetKm: 1.3, bearing: 320 },
-  { venue: "Maple & Co.", category: "promo", tag: "Local promo", deal: "20% off first visit this week", offsetKm: 0.3, bearing: 80 },
   { venue: "Noodle Bar 8", category: "lunch", tag: "Lunch special", deal: "Combo bowl, $9, 11am-2pm", offsetKm: 0.7, bearing: 150 },
+  { venue: "Pat's Tacos", category: "lunch", tag: "Lunch special", deal: "3 tacos + drink, $8, 11am-2pm", offsetKm: 0.8, bearing: 10 },
+  { venue: "Banh Mi House", category: "lunch", tag: "Lunch special", deal: "Combo banh mi + soup, $10 until 2:30pm", offsetKm: 0.6, bearing: 260 },
+  { venue: "Maple & Co.", category: "lunch", tag: "Lunch special", deal: "Sandwich + side, $11, weekdays", offsetKm: 0.3, bearing: 80 },
+  { venue: "The Tin Cup", category: "happy-hour", tag: "Happy hour", deal: "$5 drafts, 4-6pm daily", offsetKm: 0.9, bearing: 110 },
   { venue: "Greenpoint Taproom", category: "happy-hour", tag: "Happy hour", deal: "Half-price appetizers, 3-5pm", offsetKm: 1.0, bearing: 40 },
-  { venue: "Public Library Plaza", category: "free-event", tag: "Free event", deal: "Pop-up book swap, 12-4pm", offsetKm: 0.5, bearing: 290 },
-  { venue: "Pat's Tacos", category: "food-deal", tag: "Food deal", deal: "Taco Tuesday, $1.50 each", offsetKm: 0.8, bearing: 10 },
-  { venue: "The Quiet Room", category: "live-music", tag: "Live music", deal: "Open mic night, 8pm, free entry", offsetKm: 1.4, bearing: 230 },
-  { venue: "Sunny Side Cafe", category: "promo", tag: "Local promo", deal: "Free pastry with any coffee", offsetKm: 0.2, bearing: 170 },
+  { venue: "The Lower Deck", category: "happy-hour", tag: "Happy hour", deal: "$2 off all cocktails, 4-7pm", offsetKm: 1.3, bearing: 320 },
+  { venue: "Sunny Side Cafe", category: "happy-hour", tag: "Happy hour", deal: "Half-price wine, 5-6pm", offsetKm: 0.2, bearing: 170 },
 ];
 
 let userLocation = null;
