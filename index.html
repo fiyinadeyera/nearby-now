@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nearby Now</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="brand">NEARBY NOW</span>
+    <span class="status" id="statusPill">locating…</span>
+  </div>
+</header>
+
+<main class="app">
+
+  <section class="intro">
+    <p class="label">RIGHT NOW · WITHIN 15 MIN WALK</p>
+    <h1 class="heading">What's happening near you</h1>
+    <p class="body">Lunch specials, happy hours, free events, and local deals, sorted by how close they are.</p>
+  </section>
+
+  <section class="locate" id="locateSection">
+    <button class="btn btn--primary" id="locateBtn">Use my location</button>
+    <button class="btn btn--ghost" id="manualBtn">Enter a location instead</button>
+    <div class="manual-input" id="manualInput" hidden>
+      <input type="text" id="manualAddress" placeholder="Neighborhood or address" />
+      <button class="btn btn--primary" id="manualSubmit">Go</button>
+    </div>
+    <p class="caption" id="locateMsg"></p>
+  </section>
+
+  <section class="filters" id="filtersSection" hidden>
+    <button class="chip is-active" data-filter="all">All</button>
+    <button class="chip" data-filter="lunch">Lunch specials</button>
+    <button class="chip" data-filter="happy-hour">Happy hour</button>
+    <button class="chip" data-filter="free-event">Free events</button>
+    <button class="chip" data-filter="food-deal">Food deals</button>
+    <button class="chip" data-filter="live-music">Live music</button>
+    <button class="chip" data-filter="promo">Local promos</button>
+  </section>
+
+  <section class="results" id="resultsSection" hidden>
+    <p class="caption results-count" id="resultsCount"></p>
+    <div class="card-list" id="cardList"></div>
+  </section>
+
+  <section class="empty" id="emptyState" hidden>
+    <p class="body">Nothing matching that filter within 15 minutes on foot right now.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="caption">Demo data right now. Real deals coming once venues are onboarded.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
